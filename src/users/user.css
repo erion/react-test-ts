@@ -1,0 +1,94 @@
+#user-list {text-align: right;}
+#user-list .header {
+  background-color: #047483;
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: bold;
+  padding: 1rem 0.5rem;
+  text-align: left;
+  text-transform: uppercase;  
+}
+
+#user-list .user-card {
+  background-color: #DEDEDE;
+  border-radius: 0.5rem;
+  padding: 0 0.5rem;
+  text-align: left;
+}
+
+#user-list .fa {
+  color: #047483;
+  padding-right: 0.5rem;
+}
+
+#user-list ul:hover {border-top: 10px solid #E2DF19;}
+#user-list ul {
+  border-top: 10px solid red;
+  margin-top: 0.5rem;
+}
+
+#user-list li {padding: 0.5rem 0;}
+#user-list .card-header {
+  color: #047483;
+  border-bottom: 1px solid #B9B9B9;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  text-align:center;
+}
+
+#user-list .card-header p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 99%;
+}
+
+/* sm styles */
+@media (min-width: 576px) { 
+  #user-list .user-card {width: 100%;}
+}
+
+/* md styles */
+@media (min-width: 768px) { 
+  #user-list .user-card {
+    width: 47%;
+    float: left;
+  }
+
+  #user-list .ul-right { float: right; }
+  
+  #user-list p {
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 99%;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    line-height: 1rem;
+    max-height: 4rem;
+  }  
+}
+
+/* lg xl styles */
+@media (min-width: 992px) { 
+  #user-list {text-align: left;}
+  #user-list .user-card {
+    width: 23%;
+    float:left;
+  }
+
+  #user-list .user-card + .user-card {
+    margin-left: 1%;
+  }
+
+  #user-list p {
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 99%;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    line-height: 1rem;
+    max-height: 4rem;
+  }
+}

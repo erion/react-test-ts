@@ -1,0 +1,46 @@
+#new-user {text-align: right;}
+#new-user .text-left {text-align: left;}
+
+#new-user form {color: #919191;}
+
+/* xs sm styles */
+@media (max-width: 567px) { 
+
+  #new-user form {text-align: left;}
+
+  #new-user label {
+    margin-bottom: 0.5rem;
+    width: 99%; 
+  }
+
+  #new-user input {
+    margin-bottom: 0.5rem;
+    width: 99%; 
+  }
+
+  #new-user textarea {
+    height: 8rem;
+    width: 99%; 
+  }
+}
+
+/* md styles */
+@media (min-width: 768px) { 
+  #new-user .left {float:left;}
+  #new-user .right {float:right;}
+  #new-user label {margin-right: 1rem;}
+
+  #new-user textarea {
+    height: 8rem;
+    margin-left: 4rem;
+    width: 91%; 
+  }
+}
+
+/* lg xl styles */
+@media (min-width: 992px) { 
+  #new-user {text-align: left;}
+  #new-user form {margin: 0 25%;}
+  #new-user form .btn {float:right;}
+  #new-user textarea {width: 89%;}  
+}
